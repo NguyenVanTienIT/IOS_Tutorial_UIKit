@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D55893B2919F6F6004A544C /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D55893A2919F6F6004A544C /* TodoListViewController.swift */; };
 		7924F9BE288A888F00FA9EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924F9BD288A888F00FA9EE8 /* AppDelegate.swift */; };
 		7924F9C0288A888F00FA9EE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924F9BF288A888F00FA9EE8 /* SceneDelegate.swift */; };
 		7924F9C2288A888F00FA9EE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924F9C1288A888F00FA9EE8 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D55893A2919F6F6004A544C /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		7924F9BA288A888F00FA9EE8 /* IOS_Tutorial_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Tutorial_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7924F9BD288A888F00FA9EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7924F9BF288A888F00FA9EE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		7924F9BC288A888F00FA9EE8 /* IOS_Tutorial_UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3D55893A2919F6F6004A544C /* TodoListViewController.swift */,
 				7924F9BD288A888F00FA9EE8 /* AppDelegate.swift */,
 				7924F9BF288A888F00FA9EE8 /* SceneDelegate.swift */,
 				7924F9C1288A888F00FA9EE8 /* ViewController.swift */,
@@ -145,6 +148,7 @@
 				7924F9BE288A888F00FA9EE8 /* AppDelegate.swift in Sources */,
 				7924F9C8288A888F00FA9EE8 /* IOS_Tutorial_UIKit.xcdatamodeld in Sources */,
 				7924F9C0288A888F00FA9EE8 /* SceneDelegate.swift in Sources */,
+				3D55893B2919F6F6004A544C /* TodoListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
