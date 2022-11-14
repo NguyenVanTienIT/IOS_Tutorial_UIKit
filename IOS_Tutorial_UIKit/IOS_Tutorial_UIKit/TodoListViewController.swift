@@ -10,6 +10,15 @@ import UIKit
 class ToDoListViewController: UIViewController {
     
     override func viewDidLoad() {
-        // handle when view did load
+       setLayoutHeader()
+    }
+    
+    func setLayoutHeader() {
+        let buttonAdd = UIBarButtonItem(title: "Add", style: UIBarButtonItem.Style.plain, target: self, action: #selector(handleAddItemTodo(sender:)))
+        navigationItem.setRightBarButton(buttonAdd, animated: true)
+    }
+    
+    @objc func handleAddItemTodo(sender: UIBarButtonItem) {
+        print("AAA")
     }
 }

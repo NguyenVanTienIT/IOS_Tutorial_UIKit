@@ -11,12 +11,12 @@ class ViewController: UIViewController {
 
     var aphal: Float?
     var beta: Float?
+    var navController: UINavigationController?
     
     @IBOutlet weak var result: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func handleTouchOutside(_ sender: UITextField) {
@@ -44,5 +44,20 @@ class ViewController: UIViewController {
             result.text = "This is result \(aphal! * 0.4 + beta! * 0.6)"
         }
     }
+    
+    @IBAction func handleNavigate(_ sender: Any) {
+        let alert = UIAlertController(title: "Navigate Todo List", message: "Do you want navigate to Todo List?", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { action in
+            self.handleNavigateTodoList()
+        }))
+        self.present(alert, animated: true)
+    
+    }
+    
+    func handleNavigateTodoList() {
+        performSegue(withIdentifier: "navigateToTodoList", sender: nil)
+//        let currentScreen = self.storyboard?.instantiateViewController(withIdentifier: "home") as! ViewController
+//        let todoListViewControler = self.storyboard?.instantiateViewController(withIdentifier: "todoList") as! ToDoListViewController
+//        currentScreen.navigationController?.pushViewController(todoListViewControler, animated: true)
+    }
 }
-
