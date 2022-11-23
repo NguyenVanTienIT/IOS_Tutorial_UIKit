@@ -77,6 +77,9 @@ class ToDoListViewController: UIViewController{
         present(dialogAdd, animated: true)
     }
     
+    @IBAction func handleNextPress(_ sender: Any) {
+        performSegue(withIdentifier: "toDesignView", sender: nil)
+    }
     func handleReloadListItem() {
         DispatchQueue.main.async {
             self.todoListView.reloadData()
